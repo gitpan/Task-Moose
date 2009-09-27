@@ -1,5 +1,9 @@
 Revision history for Perl extension Task-Moose
 
+0.03
+    - added minimum versions for modules that conflict with latest Moose
+      (daxelrod)
+
 0.02
     - added (stevan, Sartak, doy):
       - MooseX::Clone

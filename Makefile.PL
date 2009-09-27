@@ -6,18 +6,18 @@ name 'Task-Moose';
 all_from 'lib/Task/Moose.pm';
 license 'perl';
 
-requires 'Moose' => 0.90;
+requires 'Moose' => 0.92;
 
 
 # Make Moose Stricter
 
 feature 'Making Moose constructors stricter',
   -default                    => 0,
-  'MooseX::StrictConstructor' => 0;
+  'MooseX::StrictConstructor' => 0.08;
 
 feature 'Moose-ish method parameter handling',
   -default                   => 0,
-  'MooseX::Params::Validate' => 0;
+  'MooseX::Params::Validate' => 0.06;
 
 # Traits / Roles
 
@@ -49,11 +49,11 @@ feature 'Inside out instance type for Moose',
 
 feature 'Singleton instance type for Moose',
   -default            => 0,
-  'MooseX::Singleton' => 0;
+  'MooseX::Singleton' => 0.20;
 
 feature 'Subclassing of non-Moose classes',
   -default           => 0,
-  'MooseX::NonMoose' => 0;
+  'MooseX::NonMoose' => 0.06;
 
 # Devel::Declare children
 
@@ -73,7 +73,7 @@ feature 'Declarative exception handling',
 
 feature 'Moose type extensions',
   -default        => 0,
-  'MooseX::Types' => 0;
+  'MooseX::Types' => 0.20;
 
 feature 'Structured type constraints',
   -default                    => 0,
@@ -178,7 +178,7 @@ feature 'Support for PBP style accessors',
 
 feature "Keep imported subroutines out of your class's namespace",
   -default               => 0,
-  'namespace::autoclean' => 0;
+  'namespace::autoclean' => 0.09;
 
 
 # Utilities

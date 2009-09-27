@@ -20,4 +20,3 @@ cover_db
 ^PLAN$
 ^benchmarks$
 ^\._.*$
-\.git
